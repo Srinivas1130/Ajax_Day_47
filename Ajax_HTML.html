@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Test Ajax Services and promise</title>
+    <style>
+        .body{ margin: auto;}
+    div {
+        border: 1px solid black;
+        background-color: lightblue;
+        padding: 50px;
+        width: 80%;
+        font-size: xx-large;
+        margin-top: 50px;
+    }
+    </style>
+    <script src="../JS/AjaxPromise.js"></script>
+    </head>
+    <body>
+        <h1>The test service result</h1>
+        <div id="get_service"></div>
+        <div id="delete-service"></div>
+        <div id="post-service"></div>
+        <script>
+            const getElem = document.querySelector("#get_service");
+            const getURL = "http://127.0.0.1:3000/employee/1";
+            makePromiseCall("GET", getURL, true)
+            .then(responseText => {
+            getElem.textContent= "Get user data : "+responseText;
+             })
+            .catch(error => {
+                getElem.textContent="Get error status : "+JSON.stringify(error);
+            })
+        </script>
+    </body>
+</html>
