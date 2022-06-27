@@ -1,0 +1,26 @@
+{
+    "employee":[
+        {
+            "id": 1,
+            "name": "pankaj",
+            "salary": "10000"
+        },
+        {
+            "id": 2,
+            "name": "Ramesh",
+            "salary": "12000"
+        },
+        {
+            "id": 3,
+            "name": "Divya",
+            "salary": "5000"
+        },
+        {
+            "id": 4,
+            "name": "Venkat",
+            "salary": "13000"
+        }
+
+    ]
+}
+© 2022 GitHu
